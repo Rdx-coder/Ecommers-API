@@ -1,0 +1,127 @@
+/* styles.css */
+
+/* General styles */
+body {
+  font-family:cursive;
+  background-color: #f9f9f9;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+/* Create Product form */
+form {
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="number"] {
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Product List table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+td {
+  border-bottom: 1px solid #f2f2f2;
+}
+
+/* Update Quantity form */
+table.form-table {
+  margin-top: 20px;
+}
+
+/* Link styling */
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Button styling */
+.create-product-button,
+.delete-button,
+.update-link,
+.update-quantity-button {
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.create-product-button {
+  background-color: #ff9933; /* Saffron */
+  display: block;
+  text-align: center;
+}
+
+.create-product-button:hover {
+  background-color: #ff8000; /* Darker Saffron */
+}
+
+.delete-button {
+  background-color: #138808; /* Green */
+}
+
+.delete-button:hover {
+  background-color: #107006; /* Darker Green */
+}
+
+
+.update-quantity-button {
+  background-color: #333;
+  /* color: white;  */
+}
+
+.update-quantity-button:hover {
+  background-color: #fafafa; 
+  color: black;
+}
