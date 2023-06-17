@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const productRoutes = require('./routes/productRoutes');
 
 const app = express();
-const PORT = 3000;
+const PORT = 5000;
 const MONGODB_URI = 'mongodb://127.0.0.1/ecommerce';
 
 // Connect to MongoDB
