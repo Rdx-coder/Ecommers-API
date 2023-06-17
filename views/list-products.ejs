@@ -9,7 +9,7 @@
   <body>
     <div class="container">
       <h1>Product List</h1>
-      <a href="/products/create" class="create-product-button">Create Product</a>
+      <a href="/create" class="create-product-button">Create Product</a>
       <% if (products.length === 0) { %>
       <p>No products available</p>
       <% } else { %>
@@ -30,13 +30,13 @@
             <td><%= product.name %></td>
             <td><%= product.quantity %></td>
             <td>
-              <form action="/products/<%= product._id %>/delete" method="POST">
+              <form action="/<%= product._id %>/delete" method="POST">
                 <button type="submit" class="delete-button">Delete</button>
               </form>
             </td>
             <td>
 
-              <a href="/products/<%= product._id %>/update_quantity"
+              <a href="/<%= product._id %>/update_quantity"
                 class="update-quantity-button">Update Quantity</a>
             </td>
           </tr>
