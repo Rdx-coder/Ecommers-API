@@ -13,7 +13,7 @@ exports.createProduct = async (req, res) => {
     const product = new Product({ name, quantity });
     await product.save();
 
-    res.redirect('/');
+    res.redirect('/product');
   } catch (error) {
     res.status(500).json({ error: 'An error occurred' });
   }
@@ -36,7 +36,7 @@ exports.deleteProduct = async (req, res) => {
     const { id } = req.params;
     await Product.findByIdAndDelete(id);
 
-    res.redirect('/');
+    res.redirect('/product');
   } catch (error) {
     res.status(500).json({ error: 'An error occurred' });
   }
@@ -68,7 +68,7 @@ exports.updateProductQuantity = async (req, res) => {
     product.quantity = quantity;
     await product.save();
 
-    res.redirect('/');
+    res.redirect('/product');
   } catch (error) {
     res.status(500).json({ error: 'An error occurred' });
   }

@@ -22,7 +22,7 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
 // Routes
-app.use('/', productRoutes);
+app.use('/product', productRoutes);
 
 // Start the server
 app.listen(PORT, () => {
