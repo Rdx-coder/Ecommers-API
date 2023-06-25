@@ -1,9 +1,9 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const productRoutes = require('./routes/productRoutes');
-
+require('dotenv').config();
 const app = express();
-const PORT = 5000;
+const port = process.env.PORT || 5000;
 const MONGODB_URI = 'mongodb://127.0.0.1/ecommerce';
 
 // Connect to MongoDB
@@ -25,6 +25,6 @@ app.use(express.static('public'));
 app.use('/', productRoutes);
 
 // Start the server
-app.listen(PORT, () => {
-  console.log(`Server is running on http://127.0.0.1:${PORT}`);
+app.listen(port, () => {
+  console.log(`Server is running on http://127.0.0.1:${port}`);
 });
