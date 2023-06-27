@@ -3,6 +3,10 @@ const mongoose = require('mongoose');
 const productRoutes = require('./routes/productRoutes');
 require('dotenv').config();
 const app = express();
+<<<<<<< HEAD
+=======
+const PORT = 3000;
+>>>>>>> d6d670e1009ec31754414a1014d11a690f74690e
 const MONGODB_URI = 'mongodb://127.0.0.1/ecommerce';
 
 // Connect to MongoDB
